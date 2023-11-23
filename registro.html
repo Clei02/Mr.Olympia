@@ -1,0 +1,239 @@
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Mr.Olympia</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/faviconxd.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+    <!-- Template Main CSS Files -->
+    <link href="assets/css/variables.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: ZenBlog
+    * Updated: Sep 18 2023 with Bootstrap v5.3.2
+    * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+    * Author: BootstrapMade.com
+    * License: https:///bootstrapmade.com/license/
+    ======================================================== -->
+    </head>
+
+    <body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+            <!-- Uncomment the line below if you also wish to use an image logo -->
+            <img src="assets/img/logo.png" alt="">
+            
+            <h1>Mr.Olympia</h1>
+        </a>
+
+        <!-- <nav id="navbar" class="navbar">
+            <ul>
+            <li><a href="#historia">Historia</a></li>
+            <li><a href="#participantes">Galeria</a></li>
+            <li><a href="#ganadores">Ganadores</a></li>
+            <li><a href="#info">Informacion</a></li>
+            <li><a href="#conoce">Medidor de grasa</a></li>
+            </ul>
+        </nav> -->
+
+        <div class="position-relative">
+            <a target="_blank" href="https://www.facebook.com/mrolympiallc?mibextid=kFxxJD" class="mx-2"><span class="bi-facebook"></span></a>
+            <a target="_blank" href="https://twitter.com/MrOlympiaLLC" class="mx-2"><span class="bi-twitter"></span></a>
+            <a target="_blank" href="https://www.instagram.com/mrolympiallc/" class="mx-2"><span class="bi-instagram"></span></a>
+
+            <a href="#" class="mx-2 js-search-open"></a>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            <div class="iniciosesion">
+            <a href="registro.html"><img src="assets/img/inicioseccion.png" alt=""></a>
+            </div>
+
+            <!-- ======= Search Form ======= -->
+            <div class="search-form-wrap js-search-form-wrap">
+            <form action="search-result.html" class="search-form">
+                <span class="icon bi-search"></span>
+                <input type="text" placeholder="Search" class="form-control">
+                <button class="btn js-search-close"><span class="bi-x"></span></button>
+            </form>
+            </div>
+            
+
+        </div>
+
+        </div>
+
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= CARRUSEL CLEI Y JEISON ======= -->
+        <section id="participantes" class="hero-slider">
+        <div class="container-md" data-aos="fade-in">
+        </div>      
+        </section><!-- FINAL CARRUSEL -->
+
+        <!-- ======= INICIO HISRORIA======= -->
+        <section id="historia" class="posts">
+        <div class="container" data-aos="fade-up">
+            <body class="body-clei" ">
+                <h2>Formulario de registro</h2>
+                <div class="container-clei" >
+                    <div class="container mt-3">
+                        
+                        <form action="javascript:crearObjeto();">
+                            <div class="documento">
+                                <label for="email">Documento identidad:</label>
+                                <input type="text" class="form-control" id="documento" placeholder="Introduzca su Documento" name="documento>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd">Nombres y Apellidos:</label>
+                                <input type="text" class="form-control" id="nombres" placeholder="Introduzca su nombre completo" name="nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd">Email:</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd">Contraseña:</label>
+                                <input type="password" class="form-control" id="contraseña" placeholder="Introduzca su contraseña" name="contraseña">
+                            </div>
+                            <!-- <div class="mb-3">
+                                <label for="pwd">Rol en el sistema:</label>
+                                <select name="" id="rol">
+                                    <option value=" Administrador">Administrador</option>
+                                    <option value="Estudiante">Estudiante</option>
+                                    <option value="Docente">Docente</option>
+                                </select>
+                            </div> -->
+                            <button type="submit" class="btn btn-primary">Enviar datos</button>
+                        </form>
+                        <label for="documentoEliminar">Documento a Eliminar:</label>
+                        <input type="text" id="documentoEliminar">
+                        <button type="submit" class="btn btn-primary" onclick="eliminarObjeto()">Eliminar Persona</button>
+                        <br><br>
+                        <button  type="submit" class="btn btn-primary" onclick="actualizar()">Actualizar</button>
+                    </div>
+            
+                </div>
+            <div class="container-fluid-clei">
+                <h2>DataSet de los usuarios registrados</h2>
+                <div class="container mt-3">          
+                    <table class="table" id="tableclei">
+                        <thead>
+                            <tr>
+                            <th>DI</th>
+                            <th>Nombres y Apellidos</th>
+                            <th>Email</th>
+                            <th>Contraseña</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                    </div>
+            </div>
+                
+        </div> <!-- End .row -->
+        </div>
+        </section> <!-- FINAL HISTORIA  -->
+
+        <!-- ======= INICIO GANADORES ======= -->
+        <section id="ganadores" class="category-section">
+        <div class="container" data-aos="fade-up">
+
+            
+        </div>
+        </section> <!--FINAL GANADORES  -->
+
+        <!-- ======= INICIO INFORMACION======= -->
+        <section id="info" class="category-section">
+        
+        </section><!-- FINAL INFOCACION-->
+
+        <!-- ======= CALCULADORA GRASA======= -->
+        <section id="conoce" class="category-section">        
+        </div><!-- End .row -->
+        </div>     
+        </section><!-- FINAL CALCULADORA GRASA -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+        <div class="footer-legal">
+        <div class="container">
+
+            <div class="row justify-content-between">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <div class="copyright">
+                © Copyright <strong><span>Cleimer Quintero - Jeison Nuñez </span></strong>
+                </div>
+
+                <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+                <a target="_blank" href="https://twitter.com/MrOlympiaLLC" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a target="_blank" href="https://www.facebook.com/mrolympiallc?mibextid=kFxxJD" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/mrolympiallc/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCYukge4AuskD8xPjfrSoiBg" class="google-plus"><i class="bi bi-youtube"></i></a>
+                </div>
+
+            </div>
+
+            </div>
+
+        </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/Persona.js"></script>
+    <script src="assets/js/controladorMain.js"></script>
+    <script src="assets/js/registro.js"></script>
+    </body>
+
+    </html>
